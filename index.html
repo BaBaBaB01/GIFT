@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAII</title>
+    <link rel="shortcut icon" type="image/x-icon" href="tulip.png" />
+</head>
+<body>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Besley:ital,wght@0,400..900;1,400..900&family=Caveat+Brush&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Seymour+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+    * {
+  font-family: "Abril Fatface", serif;
+}
+body {
+  width: calc(100vw - 4rem);
+  height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff006e;
+  border: 4px solid #ffb5a7;
+  box-sizing: border-box;
+  margin: 2rem;
+}
+.material-symbols-outlined {
+  animation: Abc 2000ms ease-in-out;
+  font-variation-settings: "FILL" 100, "wght" 600, "GRAD" 0, "opsz" 24;
+  font-size: 4rem !important;
+  color: #ffb5a7;
+}
+@keyframes Abc {
+  from {
+    opacity: 0;
+    color: #ffc6ff;
+  }
+  to {
+    opacity: 1;
+    color: #ffc6ff;
+  }
+}
+.elem {
+  font-size: 4rem;
+  color: #ffc6ff;
+  animation: Abc 2000ms ease-in-out;
+  margin: 0 1rem;
+}
+.gift-box-button {
+            width: 100px;
+            height: 100px;
+            background-color: hsl(317, 100%, 67%);
+            border: 2px solid #c812b6;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: hsl(317, 100%, 67%);
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 85%;
+        }
+
+        .gift-box-button::before,
+        .gift-box-button::after {
+            content: '';
+            position: absolute;
+            background-color: #ffffff;
+        }
+
+        .gift-box-button::before {
+            width: 100%;
+            height: 10px;
+            top: 45px;
+        }
+
+        .gift-box-button::after {
+            width: 10px;
+            height: 100%;
+            left: 45px;
+        }
+
+        .gift-box-button .ribbon {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+        }
+
+        .gift-box-button .ribbon::before,
+        .gift-box-button .ribbon::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+            top: 2.5px;
+            border-radius: 50%;
+        }
+
+        .gift-box-button .ribbon::before {
+            left: -12.5px;
+        }
+
+        .gift-box-button .ribbon::after {
+            right: -12.5px;
+        }
+
+</style>
+<div data-splitting class="elem">KASHISH OPEN THIS</div>
+<span class="material-symbols-outlined">
+    <button class="gift-box-button" onclick="window.location.href = 'flowers.html';">
+        <span class="ribbon"></span>
+        Open
+    </button> 
+</span>
+</body>
+</html>
